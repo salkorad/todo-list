@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TodoItems from './TodoItems';
+import TodoItem from './TodoItem';
 import './index.css';
 
 const TodoList = () => {
@@ -52,7 +52,7 @@ const handleSubmit = (e) => {
   return (
       <div className="tasks-block">
           <AddItemForm addItem={addItem} />
-          <TodoItems tasks={tasks} removeItem={removeItem}  />
+          <TodoItem tasks={tasks} removeItem={removeItem}  />
       </div>
   )
 }
